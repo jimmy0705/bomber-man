@@ -32,8 +32,34 @@ function gameStart(){
 
 
 function showID(id) {
-  
+    // console.log(id);
+    // console.log(typeof id);
+
+    let TempId = parseInt(id);
+ let col = document.getElementById(id);
+ let data_id =col.dataset.value;
+  console.log(data_id);
+ //console.log(col); 
    // alert ('ID is: ' +id);
+
+   if(data_id =='1'){
+       return;
+   }else{
+    console.log(randomNum.includes(TempId));
+    if(randomNum.includes(TempId) == false){
+        score= score+5;
+        console.log(score);
+        col.setAttribute("data-value", '1');
+    }else{
+        col.setAttribute("data-value", '-1');
+        col.style.backgroundColor='red';
+        
+
+    }
+
+   }
+
+
 }
 
 
@@ -50,4 +76,4 @@ function creatRandomNum(){
 
 }
 
-//console.log(randomNum);
+console.log(randomNum);
