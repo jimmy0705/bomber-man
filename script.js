@@ -71,8 +71,8 @@ function showID(id) {
             col_red.style.backgroundColor = "red";
            
         }
-
-        setTimeout(alert("Sorry You loose ,,, Try Again !!"),5000);
+        
+        alert("Sorry You loose ,,, Try Again !!");
         
         startGame();
 
