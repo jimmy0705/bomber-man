@@ -1,0 +1,19 @@
+
+
+.container {
+    
+    border: 2px solid black;
+}
+
+
+.col {
+    
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+header {
+    text-align: center;
+    margin: 20px;
+    border-bottom: 2px solid greenyellow;
+}
