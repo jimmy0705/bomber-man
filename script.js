@@ -9,8 +9,10 @@ function gameStart(){
     let cols = document.querySelectorAll('.col');
    // console.log(cols);
    cols.forEach(element => {
-       //console.log(element);
+      // console.log(id);
+       element.innerHTML=id;
        element.id= id++;
+
       
        element.onclick = function() {
         showID(this.id);
@@ -49,11 +51,13 @@ function showID(id) {
     if(randomNum.includes(TempId) == false){
         score= score+5;
         console.log(score);
+        col.style.backgroundColor='green';
+
         col.setAttribute("data-value", '1');
     }else{
         col.setAttribute("data-value", '-1');
         col.style.backgroundColor='red';
-        
+
 
     }
 
